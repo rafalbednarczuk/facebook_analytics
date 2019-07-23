@@ -12,7 +12,6 @@ public class SwiftFacebookAnalyticsPlugin: NSObject, FlutterPlugin {
     public func handle(_ call: FlutterMethodCall, result: @escaping FlutterResult) {
         if(call.method == "logEvent"){
             guard let args = call.arguments else {
-                result("iOS could not recognize flutter arguments in method: (logEvent)")
                 return
             }
             if let myArgs = args as? [String: Any],
@@ -25,11 +24,6 @@ public class SwiftFacebookAnalyticsPlugin: NSObject, FlutterPlugin {
                 let eventName = myArgs["name"] as? String
             {
                 FBSDKAppEvents.logEvent(eventName)
-            } else {
-                result("iOS could not extract flutter arguments in method: (logEvent)")
             }
-            result("ok")
         }
-        result("dupa")
-       }
 }
