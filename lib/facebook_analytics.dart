@@ -11,9 +11,9 @@ class FacebookAnalytics {
       : _channel = platformChannel;
 
   static final FacebookAnalytics _instance =
-      FacebookAnalytics.private(const MethodChannel('facebook_app_events'));
+      FacebookAnalytics.private(const MethodChannel('facebook_analytics'));
 
-  MethodChannel _channel = const MethodChannel('facebook_app_events');
+  MethodChannel _channel = const MethodChannel('facebook_analytics');
 
   Future<void> logEvent(
       {@required String name, Map<String, dynamic> parameters}) async {

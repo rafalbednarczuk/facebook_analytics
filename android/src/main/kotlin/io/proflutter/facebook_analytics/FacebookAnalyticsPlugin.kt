@@ -17,7 +17,7 @@ class FacebookAnalyticsPlugin(private val context: Activity, private val methodC
     companion object {
         @JvmStatic
         fun registerWith(registrar: Registrar) {
-            val channel = MethodChannel(registrar.messenger(), "facebook_app_events")
+            val channel = MethodChannel(registrar.messenger(), "facebook_analytics")
             channel.setMethodCallHandler(FacebookAnalyticsPlugin(registrar.activity(), channel))
         }
     }
