@@ -26,4 +26,5 @@ public class SwiftFacebookAnalyticsPlugin: NSObject, FlutterPlugin {
                 FBSDKAppEvents.logEvent(eventName)
             }
         }
+    }
 }
