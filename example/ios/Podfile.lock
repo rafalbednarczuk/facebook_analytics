@@ -1,0 +1,38 @@
+PODS:
+  - Bolts (1.9.0):
+    - Bolts/AppLinks (= 1.9.0)
+    - Bolts/Tasks (= 1.9.0)
+  - Bolts/AppLinks (1.9.0):
+    - Bolts/Tasks
+  - Bolts/Tasks (1.9.0)
+  - facebook_analytics (0.0.1):
+    - FBSDKCoreKit (= 4.39.1)
+    - Flutter
+  - FBSDKCoreKit (4.39.1):
+    - Bolts (~> 1.9)
+  - Flutter (1.0.0)
+
+DEPENDENCIES:
+  - facebook_analytics (from `.symlinks/plugins/facebook_analytics/ios`)
+  - Flutter (from `.symlinks/flutter/ios`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Bolts
+    - FBSDKCoreKit
+
+EXTERNAL SOURCES:
+  facebook_analytics:
+    :path: ".symlinks/plugins/facebook_analytics/ios"
+  Flutter:
+    :path: ".symlinks/flutter/ios"
+
+SPEC CHECKSUMS:
+  Bolts: ac6567323eac61e203f6a9763667d0f711be34c8
+  facebook_analytics: 68b2e2add787026cd52cc226ef6c0a0909c29205
+  FBSDKCoreKit: f442aa96179cc9b382bb4abeb7e340a47cca8f91
+  Flutter: 58dd7d1b27887414a370fcccb9e645c08ffd7a6a
+
+PODFILE CHECKSUM: b6a0a141693093b304368d08511b46cf3d1d0ac5
+
+COCOAPODS: 1.7.5
