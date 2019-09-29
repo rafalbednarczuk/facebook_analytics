@@ -3,7 +3,7 @@
 #
 Pod::Spec.new do |s|
   s.name             = 'facebook_analytics'
-  s.version          = '0.0.3'
+  s.version          = '0.0.4'
   s.summary          = 'Facebook Analytics'
   s.description      = <<-DESC
 Facebook Analytics
