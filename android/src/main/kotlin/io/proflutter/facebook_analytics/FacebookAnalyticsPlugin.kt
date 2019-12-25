@@ -24,7 +24,6 @@ class FacebookAnalyticsPlugin(private val context: Activity, private val methodC
 
     override fun onMethodCall(call: MethodCall, result: Result) {
         when {
-            call.method == "getPlatformVersion" -> result.success("Android ${android.os.Build.VERSION.RELEASE}")
             call.method == "logEvent" -> {
                 val parameterBundle = createBundleFromMap(call.argument("parameters") as Map<String, Any>?)
                 logger.logEvent(call.argument("name"), parameterBundle)
