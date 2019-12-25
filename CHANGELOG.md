@@ -1,3 +1,7 @@
+## 0.1.3
+
+* Document public APIs
+
 ## 0.1.2
 
 * Migrate project to AndroidX
