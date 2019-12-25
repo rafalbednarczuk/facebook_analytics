@@ -1,6 +1,6 @@
 name: facebook_analytics
-description: Facebook Analytics
-version: 0.1.0
+description: Facebook Analytics, flutter package which is used for Facebook analytics and Facebook events.
+version: 0.1.1
 homepage: https://github.com/rafalbednarczuk/facebook_analytics
 
 environment:
