@@ -18,12 +18,12 @@ public class SwiftFacebookAnalyticsPlugin: NSObject, FlutterPlugin {
                 let eventName = myArgs["name"] as? String,
                 let parameters = myArgs["parameters"] as? [String: Any]
             {
-                FBSDKAppEvents.logEvent(eventName, parameters: parameters)
+                AppEvents.logEvent(AppEvents.Name(eventName), parameters: parameters)
             } else if
                 let myArgs = args as? [String: Any],
                 let eventName = myArgs["name"] as? String
             {
-                FBSDKAppEvents.logEvent(eventName)
+                AppEvents.logEvent(AppEvents.Name(eventName))
             }
         }
     }

@@ -3,7 +3,7 @@
 #
 Pod::Spec.new do |s|
   s.name             = 'facebook_analytics'
-  s.version          = '0.0.1'
+  s.version          = '0.0.4'
   s.summary          = 'Facebook Analytics'
   s.description      = <<-DESC
 Facebook Analytics
@@ -15,8 +15,8 @@ Facebook Analytics
   s.source_files = 'Classes/**/*'
   s.public_header_files = 'Classes/**/*.h'
   s.dependency 'Flutter'
-  s.dependency 'FBSDKCoreKit', '4.39.1'
+  s.dependency 'FBSDKCoreKit', '~> 5.6'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '9.0'
 end
 
