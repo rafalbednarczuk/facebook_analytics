@@ -21,6 +21,8 @@ class FacebookAnalytics {
         .invokeListMethod('logEvent', {"name": name, "parameters": parameters});
   }
 
+//TODO: Add Observer in order to track PageRoute Transition like FirebaseAnalytics
+/*
   Future<void> setCurrentScreen(
       {@required String screenName,
       String screenClassOverride = 'Flutter'}) async {
@@ -33,4 +35,5 @@ class FacebookAnalytics {
       'screenClassOverride': screenClassOverride,
     });
   }
+*/
 }
