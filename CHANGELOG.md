@@ -1,3 +1,7 @@
+## 0.1.2
+
+* Migrate project to AndroidX
+
 ## 0.1.1
 
 * Update package description
