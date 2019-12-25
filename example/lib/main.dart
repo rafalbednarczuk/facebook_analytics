@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 
 import 'package:facebook_analytics/facebook_analytics.dart';
 
+final facebookAnalytics = FacebookAnalytics();
+
 void main() => runApp(MyApp());
 
 class MyApp extends StatefulWidget {
@@ -10,12 +12,9 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
-  FacebookAnalytics _analytics;
-
   @override
   void initState() {
     super.initState();
-    _analytics = FacebookAnalytics();
   }
 
   @override
@@ -27,7 +26,10 @@ class _MyAppState extends State<MyApp> {
         ),
         body: Center(
           child: RaisedButton(onPressed: () {
-            _analytics.logEvent(name: "test_event");
+            facebookAnalytics.logEvent(
+              name: "test_event",
+              parameters: {"value": 10, "subname": "exampleStringValue"},
+            );
           }),
         ),
       ),
