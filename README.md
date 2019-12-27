@@ -5,14 +5,14 @@ Flutter Package implementing Facebook Analytics.
 
 ## Installation
 ### Android
-https://developers.facebook.com/quickstarts/ 
-Complete only: Add SKD, App Info, Key Hashes
+https://developers.facebook.com/quickstarts/  
+Complete only: Add SKD, App Info, Key Hashes  
 
 ### iOS
-https://developers.facebook.com/quickstarts/
-Complete only: Configure(add XML snippet to plist), Bundle Identifier 
+https://developers.facebook.com/quickstarts/  
+Complete only: Configure(add XML snippet to plist), Bundle Identifier  
 
-add this line in ios/Podfile to 9.0 (in most cases just uncomment this line in the beginning of Podfile)
+add this line in ios/Podfile to 9.0 (in most cases just uncomment this line in the beginning of Podfile)  
 `platform :ios, '9.0'`
 
 ## Example
