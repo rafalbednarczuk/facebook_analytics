@@ -1,3 +1,7 @@
+## 0.1.4
+
+* Update README with install instruction
+
 ## 0.1.3
 
 * Document public APIs
