@@ -1,16 +1,31 @@
 # facebook_analytics_example
 
-Demonstrates how to use the facebook_analytics plugin.
+```dart
+import 'package:flutter/material.dart';
+import 'package:facebook_analytics/facebook_analytics.dart';
 
-## Getting Started
+final facebookAnalytics = FacebookAnalytics();
 
-This project is a starting point for a Flutter application.
+void main() => runApp(MyApp());
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: Scaffold(
+        appBar: AppBar(
+          title: const Text('Plugin example app'),
+        ),
+        body: Center(
+          child: RaisedButton(onPressed: () {
+            facebookAnalytics.logEvent(
+              name: "test_event",
+              parameters: {"value": 10, "subname": "exampleStringValue"},
+            );
+          }),
+        ),
+      ),
+    );
+  }
+}
+```

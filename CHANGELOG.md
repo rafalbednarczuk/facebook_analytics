@@ -1,6 +1,6 @@
 ## 0.1.4
 
-* Update README with install instruction
+* Update README and example
 
 ## 0.1.3
 
